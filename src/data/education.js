@@ -1,18 +1,15 @@
-import cafamIcon from "../assets/cafam-icon.png";
-import intecIcon from "../assets/intec-icon.png";
-
 const educationData = [
     {
         name: "Colegio Apec Fernando Arturo de Meriño",
         siglas: "CAFAM",
         period: "2015 - 2020",
-        icon: cafamIcon
+        icon: "/assets/cafam-icon.png"  // Ahora apunta a la carpeta public
     },
     {
         name: "Instituto Tecnológico de Santo Domingo",
         siglas: "INTEC",
         period: "2021 - 2025",
-        icon: intecIcon
+        icon: "/assets/intec-icon.png"  // Ahora apunta a la carpeta public
     }
 ];
 
