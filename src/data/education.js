@@ -12,3 +12,5 @@ const educationData = [
         icon: "/assets/intec-icon.png"
     }
 ];
+
+export default educationData;
