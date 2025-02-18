@@ -16,10 +16,7 @@ const Home = () => {
                 </span>
                 </h3>
                 <p className='text-sm sm:text-lg mb-6'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis nunc eu elit egestas dapibus.
-                    Aliquam quis placerat magna, vitae sodales metus.
-                    Sed porta, diam vitae pharetra euismod, ipsum ligula cursus ex, ac dictum dui orci vel diam.
-                    Integer a velit erat. Donec suscipit commodo interdum.
+                    Texto de Prueba
                 </p>
             </div>
         </section>
