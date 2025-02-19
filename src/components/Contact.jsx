@@ -4,7 +4,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
     return (
-        <div className="contact-container  p-4 bg-black rounded-md max-w-4xl mx-auto flex flex-col md:flex-row">
+        <div className="contact-container  p-7 bg-black/90 rounded-md max-w-4xl mx-auto flex flex-col md:flex-row">
             <div className="contact-info flex flex-col items-center md:items-start md:w-1/2 mb-4 md:mb-0">
                 <h2 className="text-2xl font-bold mb-4 text-red-500">Contact</h2>
                 <div className="contact-item mb-4">
