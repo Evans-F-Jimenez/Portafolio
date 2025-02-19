@@ -22,7 +22,7 @@ const Skills = () => {
     const columns = prime ? "grid-cols-2" : "grid-cols-2";
 
     return (
-        <><h2 className="text-2xl font-bold mb-4 text-black-500 text-center">Skills</h2>
+        <>
             <div className={`grid ${columns} gap-4 p-6 max-w-lg mx-auto`}>
                 {displayedSkills.map((skill, index) => (
                     <motion.div

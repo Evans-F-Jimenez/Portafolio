@@ -6,7 +6,7 @@ import Services from './components/Services'
 import Experiences from './components/Experiences'
 import Education from './components/Education'
 import Contact from './components/Contact'
-import Skills from './components/Skills'
+import SkillsServices from './components/SkillsServices'
 
 const App = () => {
   return (
@@ -15,11 +15,8 @@ const App = () => {
       <div id="1">
         <Home />
       </div>
-      <div id="2">
-        <Services />
-      </div>
       <div id="3">
-        <Skills />
+        <SkillsServices />
       </div>
       <div id="4">
         <Education />

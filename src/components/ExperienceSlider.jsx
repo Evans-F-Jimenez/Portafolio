@@ -8,9 +8,9 @@ export default function ExperienceSlider() {
     const { scrollXProgress } = useScroll({ container: ref });
 
     return (
-        <div className="w-full max-w-lg mx-auto overflow-hidden relative bg-red-500/50 p-4 rounded-lg">
+        <div className="w-full max-w-lg mx-auto overflow-hidden relative bg-red-500/50 p-4 rounded-lg mb-10">
             <div className="space-y-8">
-                <div className='text-2xl font-bold mb-4 text-black-500 text-center'>Experiences</div>
+                <div className='text-2xl font-bold mb-4 text-black-500 text-center'>Projects</div>
                 <motion.div
                     ref={ref}
                     className="flex gap-4 cursor-grab p-4"
@@ -25,7 +25,7 @@ export default function ExperienceSlider() {
                         />
                     ))}
                 </motion.div>
-                <div className='text-2xl font-bold mb-4 text-black-500 text-center'>Experiences</div>
+                <div className='text-2xl font-bold mb-4 text-black-500 text-center'>Social</div>
                 <motion.div
                     ref={ref}
                     className="flex gap-4 cursor-grab p-4"
