@@ -2,21 +2,21 @@ import React, { useRef, useState, useEffect } from "react";
 import styled from "styled-components";
 import { motion, useSpring, useMotionValue, useTransform } from "framer-motion";
 import { interpolate } from "@popmotion/popcorn";
-import HeroImage from '../assets/EJ-2.jpg'
+import HeroImage from '../assets/EJ.jpg'
 
 const Container = styled.div`
-  border-radius: 8px;
+  border-radius: 7px;
   transform-style: preserve-3d;
   transform: perspective(921px);
-  width: 300px;
-  height: 400px;
-  margin: 2rem;
+  width: 250px;
+  height: 300px;
+  margin: 6rem;
 `;
 
 const Content = styled(motion.div)`
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   border-radius: 8px;
   transform-style: preserve-3d;
   perspective: 800px;

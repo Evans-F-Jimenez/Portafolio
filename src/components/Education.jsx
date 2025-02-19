@@ -5,7 +5,7 @@ import { useState } from "react";
 import educationData from "../data/education.js";
 
 export default function Education() {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
 
     return (
         <div className="max-w-screen overflow-x-hidden cursor-pointer flex flex-col items-center justify-center" onClick={() => setIsOpen(!isOpen)}>
