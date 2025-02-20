@@ -10,7 +10,7 @@ export default function Education() {
     return (
         <div className="max-w-screen overflow-x-hidden cursor-pointer flex flex-col items-center justify-center" onClick={() => setIsOpen(!isOpen)}>
             <motion.div className="w-full p-5 bg-red-500 text-white text-center">
-                <h2 className="m-0 text-xl font-bold">Educacion</h2>
+                <h2 className="m-0 text-xl font-bold">Educación</h2>
             </motion.div>
             <motion.div
                 initial={{ height: 0, opacity: 0 }}
@@ -26,6 +26,7 @@ export default function Education() {
                             <div>
                                 <h3 className="font-semibold">{edu.name} ({edu.siglas})</h3>
                                 <p className="text-gray-600">{edu.period}</p>
+                                <p className="text-gray-500 italic">{edu.degree}</p>
                             </div>
                         </div>
                     ))}
@@ -34,5 +35,3 @@ export default function Education() {
         </div>
     );
 }
-
-
