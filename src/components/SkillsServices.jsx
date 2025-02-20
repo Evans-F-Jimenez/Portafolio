@@ -10,7 +10,7 @@ const SkillsServices = () => {
                 <Services />
             </div>
             <div className="border border-red-500 p-6 rounded-lg shadow-lg w-1/2 bg-white">
-                <h2 className="text-2xl font-bold mb-4 text-black-500 text-center">Lenguajes</h2>
+                <h2 className="text-2xl font-bold mb-4 text-black-500 text-center">Conocimientos</h2>
                 <Skills />
             </div>
         </div>

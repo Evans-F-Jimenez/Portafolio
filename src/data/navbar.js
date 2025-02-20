@@ -5,7 +5,7 @@ const navList = [
     },
     {
         id: 2,
-        data: 'Lenguajes'
+        data: 'Lenguajes y Servicios'
     },
     {
         id: 3,

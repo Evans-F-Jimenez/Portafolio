@@ -4,7 +4,8 @@ const skills = [
     { name: "Flutter", icon: "/Portafolio/assets/flutter.png" },
     { name: "React", icon: "/Portafolio/assets/React-logo.png" },
     { name: "C#", icon: "/Portafolio/assets/Logo_C.png" },
-    { name: "Figma", icon: "/Portafolio/assets/figma.png" }
+    { name: "Figma", icon: "/Portafolio/assets/figma.png" },
+    { name: "JavaScript", icon: "/Portafolio/assets/JS.png" }
 ];
 
 const isPrime = (num) => {
