@@ -64,7 +64,7 @@ export default function ExperienceSlider() {
 }
 
 const images = [
-    { src: "./src/assets/CC.svg", url: "https://github.com/Chord-Connect-Team/Chord-Connect-Mobile", name: "Chord Connect", role: "Front-End Developer" },
+    { src: "/Portafolio/assets/CC.svg", url: "https://github.com/Chord-Connect-Team/Chord-Connect-Mobile", name: "Chord Connect", role: "Front-End Developer" },
 ];
 
 const images2 = [
