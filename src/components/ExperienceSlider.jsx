@@ -10,7 +10,7 @@ export default function ExperienceSlider() {
     return (
         <div className="w-full max-w-8xl mx-auto overflow-hidden relative bg-red-500 p-6 rounded-lg mb-10 transform translate-z-10">
             <div className="space-y-8">
-                <div className='text-2xl font-bold mb-4 text-black text-center transform scale-110'>Projects</div>
+                <div className='text-2xl font-bold mb-4 text-black text-center transform scale-110'>Proyectos</div>
                 <motion.div
                     ref={ref}
                     className="flex gap-6 cursor-grab p-4"
@@ -64,7 +64,7 @@ export default function ExperienceSlider() {
 }
 
 const images = [
-    { src: "/Portafolio/assets/CC.svg", url: "https://github.com/Chord-Connect-Team/Chord-Connect-Mobile", name: "Chord Connect", role: "Front-End Developer" },
+    { src: "/Portafolio/assets/CC.svg", url: "https://github.com/Chord-Connect-Team/Chord-Connect-Mobile", name: "Chord Connect", role: "Desarrollador Front-End" },
 ];
 
 const images2 = [

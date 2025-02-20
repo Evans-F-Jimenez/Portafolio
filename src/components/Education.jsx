@@ -10,7 +10,7 @@ export default function Education() {
     return (
         <div className="max-w-screen overflow-x-hidden cursor-pointer flex flex-col items-center justify-center" onClick={() => setIsOpen(!isOpen)}>
             <motion.div className="w-full p-5 bg-red-500 text-white text-center">
-                <h2 className="m-0 text-xl font-bold">Education</h2>
+                <h2 className="m-0 text-xl font-bold">Educacion</h2>
             </motion.div>
             <motion.div
                 initial={{ height: 0, opacity: 0 }}

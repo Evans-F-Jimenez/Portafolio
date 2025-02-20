@@ -2,7 +2,6 @@ import React from 'react'
 import Header from './components/Header'
 import './App.css'
 import Home from './components/Home'
-import Services from './components/Services'
 import Experiences from './components/Experiences'
 import Education from './components/Education'
 import Contact from './components/Contact'
@@ -15,16 +14,16 @@ const App = () => {
       <div id="1">
         <Home />
       </div>
-      <div id="3">
+      <div id="2">
         <SkillsServices />
       </div>
-      <div id="4">
+      <div id="3">
         <Education />
       </div>
-      <div id="5">
+      <div id="4">
         <Experiences />
       </div>
-      <div id="6">
+      <div id="5">
         <Contact />
       </div></>
   )

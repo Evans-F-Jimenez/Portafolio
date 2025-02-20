@@ -2,9 +2,9 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 const ServicesShow = [
-    { name: "Front-End Development - Mobile", icon: "/Portafolio/assets/mobile.png" },
-    { name: "Front-End Development - Web", icon: "/Portafolio/assets/web.png" },
-    { name: "UI/UX Design", icon: "/Portafolio/assets/uiux.png" },
+    { name: " Desarrollo Front-End - Movil", icon: "/Portafolio/assets/mobile.png" },
+    { name: " Desarrollo Front-End - Web", icon: "/Portafolio/assets/web.png" },
+    { name: " Diseño UI/UX", icon: "/Portafolio/assets/uiux.png" },
 ];
 
 const Services = () => {
