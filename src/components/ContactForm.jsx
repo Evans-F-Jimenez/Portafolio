@@ -8,12 +8,36 @@ const ContactForm = () => {
         message: "",
     });
 
+    const [emailError, setEmailError] = useState(""); // Estado para errores del email
+
     const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+
+        // Validar el email en tiempo real
+        if (name === "email") {
+            if (!validateEmail(value)) {
+                setEmailError("Correo inválido");
+            } else {
+                setEmailError(""); // Limpiar el error si es válido
+            }
+        }
+    };
+
+    // Función para validar el email
+    const validateEmail = (email) => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
     };
 
     const sendEmail = (e) => {
         e.preventDefault();
+
+        // Verifica si el email es válido antes de enviar
+        if (!validateEmail(formData.email)) {
+            setEmailError("Por favor, ingresa un correo válido.");
+            return;
+        }
 
         emailjs
             .send(
@@ -52,6 +76,8 @@ const ContactForm = () => {
                 onChange={handleChange}
                 required
             />
+            {emailError && <p className="text-red-500">{emailError}</p>} {/* Mensaje de error */}
+
             <textarea
                 name="message"
                 placeholder="Tu Mensaje"

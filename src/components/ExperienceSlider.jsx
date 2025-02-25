@@ -102,7 +102,7 @@ export default function ExperienceSlider() {
 const projects = [
     {
         src: "/Portafolio/assets/CC.svg",
-        url: "https://github.com/Chord-Connect-Team/Chord-Connect-Mobile",
+        url: "https://estintecedu-my.sharepoint.com/personal/1106103_est_intec_edu_do/_layouts/15/stream.aspx?id=%2Fpersonal%2F1106103_est_intec_edu_do%2FDocuments%2FProyecto%20De%20Grado%2FProyecto%20de%20Grado%2FSprint%205%2FAplicacion%20en%20Funcionamiento%2Emkv&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ef9d82caf-971c-4d16-b086-2e6a82a57b76",
         name: "Chord Connect",
         role: "Desarrollador Front-End",
         images: [
