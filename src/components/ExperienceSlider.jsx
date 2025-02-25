@@ -36,6 +36,7 @@ export default function ExperienceSlider() {
                             className="project-card relative flex-none w-56 h-64 bg-cover bg-center rounded-lg shadow-lg overflow-hidden"
                             style={{ backgroundImage: `url(${item.src})` }}
                             onMouseEnter={() => setHoveredProject(item)}
+                            onClick={() => window.open(item.url, "_blank")}
                             whileHover={{ scale: 1.1 }}
                         >
                             <motion.div
@@ -50,24 +51,30 @@ export default function ExperienceSlider() {
 
                 {hoveredProject && (
                     <motion.div
-                        className="mt-6 flex gap-4 justify-center items-center"
+                        className="mt-6 overflow-hidden"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 20 }}
                         transition={{ duration: 0.5 }}
                     >
-                        {hoveredProject.images.map((img, idx) => (
-                            <motion.img
-                                key={idx}
-                                src={img}
-                                alt={`Imagen ${idx + 1}`}
-                                className="w-70 h-150 object-cover rounded-lg shadow-lg"
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                exit={{ opacity: 0 }}
-                                transition={{ duration: 0.9 }}
-                            />
-                        ))}
+                        <motion.div
+                            className="flex gap-4 cursor-grab p-4"
+                            drag="x"
+                            dragConstraints={{ left: -800, right: 0 }}
+                        >
+                            {hoveredProject.images.map((img, idx) => (
+                                <motion.img
+                                    key={idx}
+                                    src={img}
+                                    alt={`Imagen ${idx + 1}`}
+                                    className="w-60 h-130 object-cover rounded-lg shadow-lg"
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    exit={{ opacity: 0 }}
+                                    transition={{ duration: 0.9 }}
+                                />
+                            ))}
+                        </motion.div>
                     </motion.div>
                 )}
 
@@ -102,7 +109,7 @@ export default function ExperienceSlider() {
 const projects = [
     {
         src: "/Portafolio/assets/CC.svg",
-        url: "https://estintecedu-my.sharepoint.com/personal/1106103_est_intec_edu_do/_layouts/15/stream.aspx?id=%2Fpersonal%2F1106103_est_intec_edu_do%2FDocuments%2FProyecto%20De%20Grado%2FProyecto%20de%20Grado%2FSprint%205%2FAplicacion%20en%20Funcionamiento%2Emkv&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ef9d82caf-971c-4d16-b086-2e6a82a57b76",
+        //url: "https://estintecedu-my.sharepoint.com/personal/1106103_est_intec_edu_do/_layouts/15/stream.aspx?id=%2Fpersonal%2F1106103_est_intec_edu_do%2FDocuments%2FProyecto%20De%20Grado%2FProyecto%20de%20Grado%2FSprint%205%2FAplicacion%20en%20Funcionamiento%2Emkv&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ef9d82caf-971c-4d16-b086-2e6a82a57b76",
         name: "Chord Connect",
         role: "Desarrollador Front-End",
         images: [
@@ -115,6 +122,6 @@ const projects = [
 ];
 
 const socials = [
-    { src: "/Portafolio/assets/intecnologia2024.png", url: "https://hoy.intec.edu.do/evento/intecnologia-2024-inteligencia-artificial-y-sostenibilidad/", name: "Intecnologia 2024", role: "Expositor | REFODIGE" },
-    { src: "/Portafolio/assets/MS2025.png", url: "https://www.intec.edu.do/en/notas-de-prensa/item/intec-promueve-carreras-stem-durante-manufacturing-summit-2025", name: "Manufacturing Summit 2025", role: "Expositor en Stand | INTEC" },
+    { src: "/Portafolio/assets/intecnologia2024.png", url: "https://hoy.intec.edu.do/...", name: "Intecnologia 2024", role: "Expositor | REFODIGE" },
+    { src: "/Portafolio/assets/MS2025.png", url: "https://www.intec.edu.do/...", name: "Manufacturing Summit 2025", role: "Expositor en Stand | INTEC" },
 ];
