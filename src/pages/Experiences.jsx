@@ -16,7 +16,7 @@ const Experiences = () => {
 
             <div className="flex flex-wrap gap-8 justify-center pt-5">
                 <ExperienceCard title="Realidad Virtual (VR)" link="/portafolio/vr" bgimage={VRImage} />
-                <ExperienceCard title="Realidad Aumentada (VA)" link="/portafolio/va" bgimage={VAImage} />
+                {/* <ExperienceCard title="Realidad Aumentada (VA)" link="/portafolio/va" bgimage={VAImage} /> */}
                 <ExperienceCard title="Front-End" link="/portafolio/front-end" bgimage={FrontEndImage} />
             </div>
         </div>
