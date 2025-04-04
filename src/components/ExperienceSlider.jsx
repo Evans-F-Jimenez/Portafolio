@@ -22,9 +22,10 @@ export default function ExperienceSlider() {
     }, []);
 
     return (
-        <div ref={ref} className="w-full max-w-8xl mx-auto overflow-hidden relative bg-red-500 p-6 rounded-lg mb-10">
+        <div ref={ref} className="w-full max-w-8xl mx-auto overflow-hidden relative bg-red-500 p-7 rounded-lg mb-10">
             <div className="space-y-8">
-                <div className='text-2xl font-bold mb-4 text-black text-center'>Proyectos</div>
+                <div className='text-2xl font-bold mb-4 text-white text-center'>Movil</div>
+                <div className='text-1xl font-bold mb-4 text-white text-center'> Haz click en imagen para ver demo.</div>
                 <motion.div
                     className="flex gap-6 cursor-grab p-4"
                     drag="x"
@@ -33,7 +34,7 @@ export default function ExperienceSlider() {
                     {projects.map((item, index) => (
                         <motion.div
                             key={index}
-                            className="project-card relative flex-none w-56 h-64 bg-cover bg-center rounded-lg shadow-lg overflow-hidden"
+                            className="project-card relative flex-none w-56 h-64 bg-cover bg-white bg-center rounded-lg shadow-lg overflow-hidden"
                             style={{ backgroundImage: `url(${item.src})` }}
                             onMouseEnter={() => setHoveredProject(item)}
                             onClick={() => window.open(item.url, "_blank")}
@@ -78,7 +79,7 @@ export default function ExperienceSlider() {
                     </motion.div>
                 )}
 
-                <div className='text-2xl font-bold mb-4 text-black text-center'>Social</div>
+                {/* <div className='text-2xl font-bold mb-4 text-black text-center'>Social</div>
                 <motion.div
                     className="flex gap-6 cursor-grab p-4"
                     drag="x"
@@ -100,7 +101,7 @@ export default function ExperienceSlider() {
                             </motion.div>
                         </motion.div>
                     ))}
-                </motion.div>
+                </motion.div> */}
             </div>
         </div>
     );
@@ -108,20 +109,20 @@ export default function ExperienceSlider() {
 
 const projects = [
     {
-        src: "/Portafolio/assets/CC.svg",
-        //url: "https://estintecedu-my.sharepoint.com/personal/1106103_est_intec_edu_do/_layouts/15/stream.aspx?id=%2Fpersonal%2F1106103_est_intec_edu_do%2FDocuments%2FProyecto%20De%20Grado%2FProyecto%20de%20Grado%2FSprint%205%2FAplicacion%20en%20Funcionamiento%2Emkv&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ef9d82caf-971c-4d16-b086-2e6a82a57b76",
+        src: "/assets/CC-Purple.svg",
+        url: "https://estintecedu-my.sharepoint.com/:v:/g/personal/1106103_est_intec_edu_do/ETw08WaYMd1Ak2X3pJAyTQABE1p0jJmfvxr3W2E5HPglOg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=T0HVFw",
         name: "Chord Connect",
         role: "Desarrollador Front-End",
         images: [
-            "/Portafolio/assets/Inicio-CC.png",
-            "/Portafolio/assets/1-CC.png",
-            "/Portafolio/assets/2-CC.png",
-            "/Portafolio/assets/3-CC.png"
+            "/assets/Inicio-CC.png",
+            "/assets/1-CC.png",
+            "/assets/2-CC.png",
+            "/assets/3-CC.png"
         ]
-    }
+    },
 ];
 
-const socials = [
-    { src: "/Portafolio/assets/intecnologia2024.png", url: "https://hoy.intec.edu.do/...", name: "Intecnologia 2024", role: "Expositor | REFODIGE" },
-    { src: "/Portafolio/assets/MS2025.png", url: "https://www.intec.edu.do/...", name: "Manufacturing Summit 2025", role: "Expositor en Stand | INTEC" },
-];
+// const socials = [
+//     { src: "/assets/intecnologia2024.png", url: "https://hoy.intec.edu.do/...", name: "Intecnologia 2024", role: "Expositor | REFODIGE" },
+//     { src: "/assets/MS2025.png", url: "https://www.intec.edu.do/...", name: "Manufacturing Summit 2025", role: "Expositor en Stand | INTEC" },
+// ];

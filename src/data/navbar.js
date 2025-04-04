@@ -1,23 +1,28 @@
 const navList = [
     {
         id: 1,
-        data: 'Inicio'
+        data: 'Inicio',
+        link: "/"
     },
     {
         id: 2,
-        data: 'Lenguajes y Servicios'
+        data: 'Lenguajes y Servicios',
+        link: "/skills-services"
     },
     {
         id: 3,
-        data: 'Educacion'
+        data: 'Educacion',
+        link: "/education"
     },
     {
         id: 4,
-        data: 'Experiencia'
+        data: 'Portafolio',
+        link: "/portafolio"
     },
     {
         id: 5,
-        data: 'Contacto'
+        data: 'Contacto',
+        link: "/contact"
     }
 ]
 

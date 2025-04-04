@@ -41,10 +41,10 @@ const ContactForm = () => {
 
         emailjs
             .send(
-                "service_25gv313",  // 🔹 Reemplaza con tu Service ID
-                "template_nilrbvl", // 🔹 Reemplaza con tu Template ID
+                "service_25gv313",  // 🔹 
+                "template_nilrbvl", // 🔹 
                 formData,
-                "JhM45ROy4ASO8gT9l"  // 🔹 Reemplaza con tu Public Key
+                "JhM45ROy4ASO8gT9l"  // 🔹 
             )
             .then(
                 (response) => {
@@ -85,7 +85,7 @@ const ContactForm = () => {
                 onChange={handleChange}
                 required
             ></textarea>
-            <button type="submit" className="p-2 bg-red-500 text-white rounded-md hover:bg-blue-600">
+            <button type="submit" className="p-2 bg-red-500 text-white rounded-md hover:bg-white hover:text-black">
                 Enviar
             </button>
         </form>
