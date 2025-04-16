@@ -2,7 +2,7 @@
   "name": "portafolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://evans-f-jimenez.github.io/Portafolio/",
+  "homepage": "https://evans-f-jimenez.github.io/MyPage/",
   "type": "module",
   "scripts": {
     "deploy": "npm run build && gh-pages -d dist",

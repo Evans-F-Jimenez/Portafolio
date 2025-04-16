@@ -109,15 +109,15 @@ export default function ExperienceSlider() {
 
 const projects = [
     {
-        src: "/assets/CC-Purple.svg",
+        src: "/MyPage/assets/CC-Purple.svg",
         url: "https://estintecedu-my.sharepoint.com/:v:/g/personal/1106103_est_intec_edu_do/ETw08WaYMd1Ak2X3pJAyTQABE1p0jJmfvxr3W2E5HPglOg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=T0HVFw",
         name: "Chord Connect",
         role: "Desarrollador Front-End",
         images: [
-            "/assets/Inicio-CC.png",
-            "/assets/1-CC.png",
-            "/assets/2-CC.png",
-            "/assets/3-CC.png"
+            "/MyPage/assets/Inicio-CC.png",
+            "/MyPage/assets/1-CC.png",
+            "/MyPage/assets/2-CC.png",
+            "/MyPage/assets/3-CC.png"
         ]
     },
 ];

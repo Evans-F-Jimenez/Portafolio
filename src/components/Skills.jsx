@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 
 const skills = [
-    { name: "Flutter", icon: "/assets/flutter.png" },
-    { name: "React", icon: "/assets/React-logo.png" },
-    { name: "C#", icon: "/assets/Logo_C.png" },
-    { name: "Figma", icon: "/assets/figma.png" },
-    { name: "JavaScript", icon: "/assets/JS.png" }
+    { name: "Flutter", icon: "/MyPage/assets/flutter.png" },
+    { name: "React", icon: "/MyPage/assets/React-logo.png" },
+    { name: "C#", icon: "/MyPage/assets/Logo_C.png" },
+    { name: "Figma", icon: "/MyPage/assets/figma.png" },
+    { name: "JavaScript", icon: "/MyPage/assets/JS.png" }
 ];
 
 const Skills = () => {
